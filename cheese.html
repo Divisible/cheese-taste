@@ -1,0 +1,230 @@
+<?php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^.*$ $0.php [L,QSA]
+RewriteCond %{THE_REQUEST} ([^\s]*)\.php(\?[^\s]*)?
+RewriteRule (.*) %1 [R=301,L]
+?>
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cheese taste</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/coin-slider-styles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i" rel="stylesheet">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+   
+    <header> <!-- start HEADER container -->
+        <div class="wrapper">
+            <div class="top-bar">
+                <div class="header-logo">
+                    <a href="http://cheesekingdom.com.ua/"><img src="img/logo.png" alt="Cheesekingdom"></a>
+                </div>
+                <nav class="navigation">
+                    <ul id="menu">
+<!--                        <li><a href="#">сырное королевство</a></li>-->
+                        <li><a href="#directions">направления</a></li>
+                        <li><a href="#team">команда</a></li>
+                        <li><a href="#contact">связь</a></li>
+                        <li><a href="#reviews">отзывы</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header-title">
+                <h1>Дегустация от Сырного Королевства</h1>
+                <p>это возможность устроить праздник вкусов на вашем мероприятии</p>
+            </div>
+        </div>
+    </header> <!-- end HEADER container --> 
+    
+    <main id="content"> <!-- start MAIN container --> 
+        <section id="directions" class="description">
+            <div class="wrapper">
+                <div class="description-title">
+                   <h2>направления</h2>
+                   <p>Теперь у Вас есть возможность пригласить «Сырное королевство» к себе. Будь то деловая конференция с фуршетом, корпоратив, либо же семейное торжество</p> 
+                </div>
+                <div class="description-items">
+                    <div class="description-item">
+                        <img id="myImg" src="img/reception-smal.jpg" alt="Формируем сырные плато, гости подходят, пробуют, мы рассказываем интересные факты о представленных вкусностях, отвечаем на вопросы" title="Фуршет">
+                        <h3>фуршет</h3>
+                        <div id="myModal" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img01">
+                            <div id="caption"></div>
+                        </div>
+                    </div>
+                    <div class="description-item">
+                        <img id="myImg2" src="img/corporate-parties-smal.jpg" alt="В рамках запланированного Вами корпоратива выступают наши сомелье. Гости получают индивидуальные сырные тарелочки, а мы расскзываем, что за сыры на них  представлены, в каком порядке правильно пробовать и почему, историю возникновения сыров, всемовозможные любопытные и забавные факты" title="Корпоративы">
+                        <h3>корпоративы</h3>
+                        <div id="myModal2" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img02">
+                            <div id="caption2"></div>
+                        </div>
+                    </div>
+                    <div class="description-item">
+                        <img id="myImg3" src="img/individual-tastings-smal.jpg" alt="Есть возможность индивидуальной закрытой дегустации от 2-ух человек, подарите настощий праздник своим близким гурманам" title="Индивидуальные дегустации">
+                        <h3>индивидуальные дегустации</h3>
+                        <div id="myModal3" class="modal">
+                            <span class="close">&times;</span>
+                            <img class="modal-content" id="img03">
+                            <div id="caption3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="break-line"></div>
+            </div>
+        </section>
+        <section id="team" class="team">
+            <div class="wrapper">
+                <div class="team-title">
+                    <h2>наша команда</h2>
+                    <p>Это опытные сомелье, прошедшие специальное обучение и подготовку</p>
+                </div>
+                <div class="team-items">
+                    <div class="team-item">
+                        <img src="http://via.placeholder.com/150x150" alt="Олег Неклеса" title="Олег Неклеса">
+                        <h3>Олег Неклеса</h3>
+                        <span>сертифицированный сомелье, руководитель направления "Выездные дегустации", директора магазина по улице <a href="http://cheesekingdom.com.ua/contact-us/" target="_blank">Богдана Хмельницкого, 27/1</a></span>
+                    </div>
+                    <div class="team-item">
+                        <img src="http://via.placeholder.com/150x150" alt="Ярослав Волошин" title="Ярослав Волошин">
+                        <h3>Ярослав Волошин</h3>
+                        <span>сертифицированный сомелье, руководитель направления "HoReCa", директора магазина по улице <a href="http://cheesekingdom.com.ua/contact-us/" target="_blank">Драгомирова, 12</a></span>
+                    </div>
+                </div>
+                <div class="break-line"></div>
+            </div>
+        </section>
+        <section id="contact" class="contact">
+            <div class="wrapper">
+                <div class="contact-title">
+                    <h2>связатся с нами</h2>
+                    <p>Если у вас есть вопросы или пожелания, или Вы просто любите сыр и хотите нам об этом сказать – пишите смело</p>
+                </div>
+                <div class="contact-form">
+                    <form method="post">
+                        <div class="form-item">
+                            <label></label>
+                            <input name="username" type="text" placeholder="Ваше имя" onfocus="placeholder='';" onblur="placeholder='Ваше имя';" required>
+                        </div>
+                        <div class="form-item">
+                            <label></label>
+                            <input name="phone" type="text" placeholder="Ваш номер телефона" onfocus="placeholder='';" onblur="placeholder='Ваш номер телефона';" required>
+                        </div>
+                        <div class="form-item">
+                            <label></label>
+                            <input name="email" type="email" placeholder="Ваша почта" onfocus="placeholder='';" onblur="placeholder='Ваша почта';" required>
+                        </div>
+                        <div class="form-item">
+                            <label></label>
+                            <textarea name="email" placeholder="Ваш вопрос" onfocus="placeholder='';" onblur="placeholder='Ваш вопрос';"></textarea> 
+                        </div>
+                        <div  class="form-item">
+                            <input name="submit" type="submit" value="Связаться">
+                        </div>
+                    </form>
+                </div>
+                <div class="break-line"></div>
+            </div>
+        </section>
+        <section id="reviews" class="reviews">
+            <div class="wrapper">
+                <div class="reviews-title">
+                    <h2>о нас говорят</h2>
+                    <p></p>
+                </div>
+                <div id="coin-slider">
+                    <div class="coin-item">
+                        <a href="http://cheesekingdom.com.ua/image/data/new_news/de6.jpg" target="_blank">
+                            <img src="img/degustation/taste-img6.jpg">
+                            <span>Дегустация №1</span>
+                        </a>
+                    </div>
+                    <div class="coin-item">
+                        <a href="http://cheesekingdom.com.ua/image/data/new_news/de2.jpg" target="_blank">
+                            <img src="img/degustation/taste-img2.jpg">
+                            <span>Дегустация №2</span>
+                        </a>
+                    </div>
+                    <div class="coin-item">
+                        <a href="http://cheesekingdom.com.ua/image/data/new_news/de3.jpg" target="_blank">
+                            <img src="img/degustation/taste-img3.jpg">
+                            <span>Дегустация №3</span>
+                        </a>
+                    </div>
+                    <div class="coin-item">
+                        <a href="http://cheesekingdom.com.ua/image/data/new_news/de1.jpg" target="_blank">
+                            <img src="img/degustation/taste-img1.jpg">
+                            <span>Дегустация №4</span>
+                        </a>
+                    </div>
+                    <div class="coin-item">
+                        <a href="http://cheesekingdom.com.ua/image/data/new_news/de4.jpg" target="_blank">
+                            <img src="img/degustation/taste-img4.jpg">
+                            <span>Дегустация №5</span>
+                        </a>
+                    </div>
+                    <div class="coin-item">
+                        <a href="http://cheesekingdom.com.ua/image/data/new_news/de5.jpg" target="_blank">
+                            <img src="img/degustation/taste-img5.jpg">
+                            <span>Дегустация №6</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main> <!-- end MAIN container --> 
+    
+    <footer> <!-- start FOOTER container -->
+        <div class="wrapper">
+            <div class="copy">
+                <p>Все права защищены. © 2017 <a href="http://cheesekingdom.com.ua/" target="_blank">CHEESEKINGDOM</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    <li><a href="https://www.instagram.com/cheesekingdom/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.facebook.com/cheesekingdom" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.youtube.com/channel/UCvVxn2ul1c4igJNaAEGkw6w" target="_blank"><i class="fa fa-youtube-square" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer> <!-- end MAIN container --> 
+    
+    <!-- JavaScript located here -->
+    
+    
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/slide-menu.js"></script>
+    <script src="js/coin-slider.min.js"></script>
+    
+    <script>
+        $(document).ready(function() {
+            $('#coin-slider').coinslider();
+        });
+    </script>
+</body>
+</html>

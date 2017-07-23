@@ -1,0 +1,124 @@
+@media screen and (max-width: 1200px) {
+    .top-bar {
+        margin: 30px 2% 50px;
+    }
+    .description-item {
+        margin: 0 auto;
+    }
+    .form-item input[type="submit"] {
+        min-width: 300px !important
+    }
+    footer .wrapper {
+        margin: 0 2%;
+    }
+}
+
+@media screen and (max-width: 1036px) {
+    .description-items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+    }
+    .description-item {
+        margin-bottom: 60px;
+    }
+    .description-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    footer .wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .social {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .top-bar {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .team-items {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        
+    }
+    .team-item {
+        width: 100%;
+        margin: 20px 3%;
+    }
+    .form-item input, textarea {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .navigation li:last-child {
+        display: none;
+    }
+    .reviews {
+        display: none; 
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .navigation li {
+        display: block;
+        text-align: center;
+        margin: 20px 0;
+    }
+    .navigation a {
+        font-size: 29px;
+    }
+    .header-title h1 {
+        font-size: 48px;
+        width: 100%;
+        margin: 0 2%;
+    }
+    form {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+    .form-item {
+        margin: 0;
+    }
+    .form-item input, textarea {
+        min-width: 300px;
+    }
+    .copy {
+        width: 100%;
+        text-align: center;
+        line-height: 23px;
+    }
+    #myImg, #myImg2, #myImg3 {
+        opacity: 1;
+    }
+    .navigation a {
+        color: rgba(255, 255, 255, 1);
+    }
+}
